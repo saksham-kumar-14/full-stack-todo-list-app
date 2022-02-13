@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@600&family=Roboto&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin : 0; 
+  padding : 0; 
+}
+html{
+  font-family: 'Heebo', sans-serif;
+}
+::selection{
+  background-color: black;
+  color: white;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}

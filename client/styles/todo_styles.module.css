@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@600&family=Roboto&display=swap');
+
+#todo_list_div{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+#create_btn{
+    background-color: orange;
+    border : none; 
+    cursor: pointer;
+    padding : 0.5rem 1rem; 
+    font-family: 'Heebo', sans-serif;
+    transition: 0.2s;
+    border-radius: 1rem;
+    margin-left: 1rem;
+}#create_btn:hover{
+    transform: scale(1.3); 
+} 
+#create_div{
+    display: flex;
+}
+#create_todo_input{
+    width : 35rem; 
+    padding: 0.1rem 1rem;
+    font-family: 'Heebo', sans-serif;
+}
+.done_img, .delete_img{
+    width: 1.5rem;
+    height: 1.5rem;  
+}
+.done_btn, .delete_btn{
+    border: solid black 0.1rem;
+    border-radius: 1rem;
+    padding : 0.25rem; 
+    cursor: pointer;
+}
+.done_btn:hover, .delete_btn:hover{
+    transform: scale(1.1);
+}
+.todo{
+    margin : 1rem 0rem;
+    display: flex;
+    align-items: center;
+}
+.todo_name{
+    text-decoration: none;
+    margin : 0 0.6rem;
+}
+.completed_todo_name{
+    text-decoration: line-through;
+    margin : 0 0.6rem;
+}
+.edit_div{
+    top:0;
+    position: absolute;
+    width: 100vw;
+    height : 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(200,200,200);
+    opacity: 0.8;
+}.edit_sub_div{
+    background-color: rgb(0,0,0);
+}.edit_sub_div button{
+    font-size : 1.5rem;
+    cursor: pointer;
+    padding: 1rem 0.35rem;
+    color: white;
+    border:none;
+    transition: 200ms;
+}.edit_sub_div input{
+    outline: none;
+    border:none;    
+    padding: 0.75rem 0.6rem;
+    background-color: rgb(0,0,0);
+    color : white;
+    width: 30rem;
+    font-size : 1.5rem;
+}.edit_sub_div input ::placeholder{
+    font-family: 'Heebo',sans-serif;
+}
+
+#main_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.edit_cancel_btn{
+    background-color: rgb(255, 72, 27);
+}.edit_submit_btn{
+    background-color: rgb(30, 228, 40);
+}.edit_cancel_btn:hover{
+    background-color: red;
+}.edit_submit_btn:hover{
+    background-color: green;
+}
+
+
+.edit_btn{
+    background-color: rgb(255, 123, 0);
+    color: rgba(255, 255, 255, 0.753);
+    border:none;
+    cursor:pointer;
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.15rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.7rem;
+    margin-left: 1rem;
+    transition: 300ms;
+}.edit_btn:hover{
+    transform:scale(1.1);
+    background-color: rgb(252, 176, 62);
+    color:rgb(30,30,30);
+}

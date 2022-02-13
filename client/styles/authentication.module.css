@@ -1,0 +1,56 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.heading{
+    font-size: 3rem;
+    color: #ff8513;
+    margin: 2rem 0;
+    transition: 0.2s;
+}
+.heading:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.form input, .form div{
+    outline: none;
+    margin: 0.3rem 0;
+    padding: 0.5rem 0.2rem;
+    font-family: 'Heebo', sans-serif;
+}
+.password_div{
+    display: grid;
+    grid-template-columns: 93% 7%;
+}
+.password_span{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: flex-end;
+}.password_span:hover{
+    text-decoration: underline;
+}
+
+.form button{
+    background-color: #ff8513;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Heebo' , sans-serif;
+    cursor: pointer;
+    border: none;
+    border-radius: 3rem;
+    margin: 2rem 30%;
+    padding: 0.5rem 0.25rem;
+    transition: 300ms;
+    border: solid white 0.15rem;
+}.form button:hover{
+    transform: scale(1.1);
+    color: white;
+    border: solid black 0.15rem;
+}
